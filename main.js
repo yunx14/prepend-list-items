@@ -2,6 +2,10 @@
 
 $(document).ready(function() {
 	$('#add').click(function() {
+		if ($('#itemtext').val() == '') {
+			alert('Type something');
+			return;
+		}
 		var itemtext = $('#itemtext').val();
 		var div = '<div>'+itemtext+'</div>';
 
